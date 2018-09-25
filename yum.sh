@@ -1,12 +1,22 @@
 #!/bin/bash
-if [ `whoami` = "root" ];then
-	echo "开始安装！"
-	yum clean all#先清空yum缓存
-	yum -y update#升级yum源
-	yum -y install zip unzip screen net-tools bind-utils vim* make gcc gcc-c++ gdb mtr wget curl automake autoconf time perl-Time-HiRes python perl virt-what gdbautomake ntp gnupg#安装软件
-	yum clean all
-	echo "Down!"
-else
-	echo "请以账号root运行这个脚本！"
+if [ `whoami` != "root" ];then
+        echo "请以账号root运行这个脚本！"
+        exit
+fi
+full=${1}
+if [ -z ${full} ] ;then
+	echo "   请输入0以最小化安装，输入1以完整安装"
 	exit
 fi
+echo "开始安装！"
+sleep 1
+yum clean all
+yum -y update
+yum -y install epel-release
+yum -y install zip unzip screen net-tool mtr sbind-utils vim* make wget curl time ntp gnupg rsync
+if [ ${full} = "1" ];then
+	yum -y install gcc-c++ gdb automake autoconf perl-Time-HiRes python perl virt-what libmcrypt-devel pv pcre-devel openssl openssl-devel gd bzip2 bzip2-devel libevent-devel libxslt-devel freetype-devel unixODBC-devel aspell-devel readline-devel net-snmp-devel enchant-devel gmp-devel
+fi
+yum clean all
+echo "Down!"
+
