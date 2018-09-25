@@ -11,6 +11,10 @@ fi
 echo "开始安装！"
 sleep 1
 yum clean all
+yum install yum-utils
+package-cleanup --dupes
+# 清除可能存在的损坏包
+package-cleanup --problems
 yum -y update
 yum -y install epel-release
 yum -y install zip unzip screen net-tool mtr sbind-utils vim* make wget curl time ntp gnupg rsync xorg-x11-xauth
