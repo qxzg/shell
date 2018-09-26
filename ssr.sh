@@ -1,5 +1,5 @@
 #/bin/bash
-yum -y install ntp git wget unzip
+yum -y install ntp git wget
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 date -s
 hwclock -w
