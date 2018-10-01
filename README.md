@@ -15,3 +15,11 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/mast
 ``` bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/master/ssr.sh && chmod +x ssr.sh
 ```
+## ssh.sh
+
+- 一键部署酸酸乳
+
+#### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/master/ssh.sh && chmod +x ssh.sh
+```
