@@ -17,7 +17,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/mast
 ```
 ## ssh.sh
 
-- 一键部署酸酸乳
+- 部署ssh公钥登录
 
 #### 下载安装:
 ``` bash
