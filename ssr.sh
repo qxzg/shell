@@ -15,4 +15,6 @@ echo "1.1.1.1 53
 1.0.0.1 53" >> dns.conf
 chmod +x /etc/rc.d/rc.local
 echo "/root/ssr/logrun.sh" >> /etc/rc.d/rc.local
+systemctl stop firewalld
+systemctl disable firewalld
 echo "请编辑/root/ssr/usermysql.json内的数据库连接信息"
