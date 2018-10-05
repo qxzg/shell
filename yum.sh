@@ -17,11 +17,10 @@ yum clean all
 # 清除可能存在的损坏包
 yum -y update
 yum -y install epel-release
-yum -y install zip unzip yum-utils screen net-tool mtr sbind-utils vim* make wget curl time ntp gnupg rsync xorg-x11-xauth git rng-tools mailcap
+yum -y install zip unzip yum-utils screen net-tools mtr bind-utils vim* make wget curl time ntp gnupg rsync xorg-x11-xauth git rng-tools mailcap
 if [ ${full} = "1" ];then
 	yum -y install gcc-c++ gdb automake m2crypto autoconf libsodium perl-Time-HiRes python perl virt-what libmcrypt-devel pv pcre-devel openssl openssl-devel gd bzip2 bzip2-devel libevent-devel libxslt-devel freetype-devel unixODBC-devel aspell-devel readline-devel net-snmp-devel enchant-devel gmp-devel
 	yum -y groupinstall "Development Tools"
 fi
-yum clean all
 echo "Down!"
 
