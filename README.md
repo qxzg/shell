@@ -7,14 +7,6 @@
 ``` bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/master/yum.sh && chmod +x yum.sh
 ```
-## ssr.sh
-
-- 一键部署酸酸乳
-
-#### 下载安装:
-``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/master/ssr.sh && chmod +x ssr.sh && ./ssr.sh
-```
 ## ssh.sh
 
 - 部署ssh公钥登录
