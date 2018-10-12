@@ -8,6 +8,5 @@ chmod 600 authorized_keys
 cd && sed -i -e "s/#PubkeyAuthentication yes/PubkeyAuthentication yes/g" /etc/ssh/sshd_config
 cd && sed -i -e "s/PasswordAuthentication yes/PasswordAuthentication no/g" /etc/ssh/sshd_config
 cd && sed -i -e "s/#Port/Port/g" /etc/ssh/sshd_config
-cd && sed -i -e "s/Port 22/Port ${1}/g" /etc/ssh/sshd_config
 service sshd restart
 cd .ssh && cat authorized_keys
