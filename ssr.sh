@@ -5,7 +5,7 @@ date -s
 hwclock -w
 ntpdate cn.pool.ntp.org
 cd
-wget -N --no-check-certificate "https://raw.githubusercontent.com/dlxg/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh
+#wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh
 git clone https://github.com/ssrpanel/shadowsocksr.git /root/ssr
 cd /root/ssr
 chmod +x *.sh
