@@ -11,6 +11,5 @@ cd && sed -i -e "s/#Port/Port/g" /etc/ssh/sshd_config
 ##关闭SELlinux
 setenforce 0
 cd && sed -i -e "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
-
 service sshd restart
 cd .ssh && cat authorized_keys
