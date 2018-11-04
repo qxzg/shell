@@ -1,4 +1,5 @@
 #!/bin/bash
+yum install -y screen
 cd && mkdir .ssh
 chmod 700 .ssh/
 cd .ssh
