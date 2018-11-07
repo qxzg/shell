@@ -13,5 +13,5 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/mast
 
 #### 下载安装:
 ``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/master/ssh.sh && chmod +x ssh.sh && ./ssh.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/master/ssh.sh && chmod +x ssh.sh && ./ssh.sh && rm -f ssh.sh
 ```
