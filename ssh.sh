@@ -1,5 +1,11 @@
 #!/bin/bash
 yum install -y screen
+##关闭SELlinux
+setenforce 0
+cd && sed -i -e "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
+#关闭Centos7默认防火墙
+systemctl stop firewalld
+systemctl disable firewalld
 cd && mkdir .ssh
 chmod 700 .ssh/
 cd .ssh
@@ -10,8 +16,5 @@ cd && sed -i -e "s/#PubkeyAuthentication yes/PubkeyAuthentication yes/g" /etc/ss
 cd && sed -i -e "s/PasswordAuthentication yes/PasswordAuthentication no/g" /etc/ssh/sshd_config
 cd && sed -i -e "s/#Port/Port/g" /etc/ssh/sshd_config
 cd && sed -i -e "s/Port 22/Port 10086/g" /etc/ssh/sshd_config
-##关闭SELlinux
-setenforce 0
-cd && sed -i -e "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
 service sshd restart
 cd .ssh && cat authorized_keys
