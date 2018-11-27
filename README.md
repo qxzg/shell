@@ -15,3 +15,12 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/mast
 ``` bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/master/ssh.sh && chmod +x ssh.sh && ./ssh.sh && rm -f ssh.sh
 ```
+
+## noaliyun.sh
+
+- 一键卸载所有套路云的监控软件
+
+#### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/master/noaliyun.sh && chmod +x ssh.sh && ./ssh.sh && rm -f ssh.sh
+```
