@@ -5,7 +5,7 @@
 
 #### 下载安装:
 ``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/master/yum.sh && chmod +x yum.sh
+wget https://raw.githubusercontent.com/qxzg/shell/master/yum.sh && chmod +x yum.sh
 ```
 ## ssh.sh
 
@@ -13,7 +13,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/mast
 
 #### 下载安装:
 ``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/master/ssh.sh && chmod +x ssh.sh && ./ssh.sh && rm -f ssh.sh
+wget https://raw.githubusercontent.com/qxzg/shell/master/ssh.sh && chmod +x ssh.sh && ./ssh.sh && rm -f ssh.sh
 ```
 
 ## noaliyun.sh
@@ -22,5 +22,5 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/mast
 
 #### 下载安装:
 ``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/qxzg/shell/master/noaliyun.sh && chmod +x ssh.sh && ./ssh.sh && rm -f ssh.sh
+wget https://raw.githubusercontent.com/qxzg/shell/master/noaliyun.sh && chmod +x noaliyun.sh && ./noaliyun.sh && rm -f noaliyun.sh
 ```
