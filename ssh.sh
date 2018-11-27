@@ -1,5 +1,5 @@
 #!/bin/bash
-yum install -y screen
+yum install -y screen xorg-x11-xauth
 ##关闭SELlinux
 setenforce 0
 cd && sed -i -e "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
