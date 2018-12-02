@@ -1,5 +1,5 @@
 #/bin/bash
-yum -y install ntp git wget
+yum -y install ntp zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel gcc
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 date -s
 hwclock -w
@@ -14,7 +14,6 @@ chmod +x *.sh
 touch dns.conf
 echo "1.1.1.1 53
 1.0.0.1 53" >> dns.conf
-yum install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel gcc
 curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 cat >> ~/.bashrc << EOF
 export PATH="/root/.pyenv/bin:\$PATH"
