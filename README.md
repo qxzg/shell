@@ -24,3 +24,11 @@ wget https://raw.githubusercontent.com/qxzg/shell/master/ssh.sh && chmod +x ssh.
 ``` bash
 wget https://raw.githubusercontent.com/qxzg/shell/master/noaliyun.sh && chmod +x noaliyun.sh && ./noaliyun.sh && rm -f noaliyun.sh
 ```
+
+## sensors.sh
+
+- 一键编译安装最新的[lm-sensor](https://github.com/lm-sensors/lm-sensors)（Linux下用于监控各种传感器温度的软件）
+#### 下载安装:
+``` bash
+wget https://raw.githubusercontent.com/qxzg/shell/master/sensors.sh && chmod +x sensors.sh && ./sensors.sh
+```
