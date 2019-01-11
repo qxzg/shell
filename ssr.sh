@@ -30,8 +30,8 @@ echo "1.1.1.1 53
 pip install -r requestment.txt
 rm -f run.sh
 touch run.sh
-echo "#!/bin/bash
-/root/.pyenv/shims/python /root/ssr/server.py m >> /root/ssr/ssserver.log 2>&1" >> run.sh
+echo " #!/bin/bash
+/root/.pyenv/shims/python /root/ssr/server.py m >> /root/ssr/ssserver.log 2>&1" > run.sh
 chmod +x run.sh
 echo "[Unit]
 Description=ssr
@@ -44,9 +44,10 @@ ExecStart=/root/ssr/run.sh
 Restart=always
 
 [Install]
-WantedBy=multi-user.target">> /usr/lib/systemd/system/ssr.service
+WantedBy=multi-user.target" > /usr/lib/systemd/system/ssr.service
 systemctl daemon-reload
 systemctl enable ssr
 systemctl start ssr
 systemctl status ssr
+systemctl stop ssr
 echo "请编辑/root/ssr/usermysql.json内的数据库连接信息"
