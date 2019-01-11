@@ -40,7 +40,7 @@ After=network.target
 
 [Service]
 ExecStartPre=eval $(ps -ef | grep "[0-9] python server\\.py m" | awk '{print "kill "$2}')
-ExecStart=/root/ssr/run.sh
+ExecStart=/bin/bash /root/ssr/run.sh
 Restart=always
 
 [Install]
