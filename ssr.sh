@@ -2,7 +2,7 @@
 cd
 systemctl stop firewalld
 systemctl disable firewalld
-yum -y install ntp zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel gcc
+yum -y install ntp zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel gcc git
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 date -s
 hwclock -w
