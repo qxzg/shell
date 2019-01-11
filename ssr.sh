@@ -1,5 +1,8 @@
 #/bin/bash
 cd
+wget https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh
+chmod +x tcp.sh
+cd
 systemctl stop firewalld
 systemctl disable firewalld
 yum -y install ntp zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel gcc git
