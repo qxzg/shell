@@ -31,6 +31,7 @@ pip install -r requestment.txt
 rm -f run.sh
 touch run.sh
 echo " #!/bin/bash
+echo "" > /root/ssr/ssserver.log
 /root/.pyenv/shims/python /root/ssr/server.py m >> /root/ssr/ssserver.log 2>&1" > run.sh
 chmod +x run.sh
 echo "[Unit]
