@@ -11,6 +11,7 @@ wget https://raw.githubusercontent.com/qxzg/shell/master/yum.sh && chmod +x yum.
 
 - 部署ssh公钥登录
 - 更改默认22端口至8848
+- 增加一些SSH的安全配置
 
 #### 下载安装:
 ``` bash
