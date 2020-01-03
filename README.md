@@ -7,7 +7,7 @@
 ``` bash
 wget https://raw.githubusercontent.com/qxzg/shell/master/yum.sh && chmod +x yum.sh
 ```
-## ssh.sh
+## ssh.sh(警告：这个脚本包含了我的个人ssh公钥，如直接使用会导致你的ssh无法登录！！)
 
 - 部署ssh公钥登录
 - 更改默认22端口至8848
