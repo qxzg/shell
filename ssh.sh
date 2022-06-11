@@ -1,5 +1,5 @@
 #!/bin/bash
-yum install -y screen xorg-x11-xauth
+dnf install -y screen xorg-x11-xauth
 echo "GPG_TTY=$(tty)
 export GPG_TTY" >> ~/.bashrc
 ##关闭SELlinux
